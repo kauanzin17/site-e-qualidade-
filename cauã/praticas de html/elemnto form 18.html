@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta chaset="UTF-8">
+    <title>Formas em HTML</title>
+    </head>
+
+<body>
+    <header>
+        <h1>Exemplo de Formulario no HTML</h1>
+    </header>
+    <article>
+        <form method="post" id="fContato" action="mailto:caua.foluvarni04@gmail.com.br"
+        oninput="result.value=parseInt(valor_01.value)+parseInt(valor_02.value)">
+
+                <fieldset>
+                    <legend>Identifivação</legend>
+                    <label for="cNome">Nome:</label><br/>
+                    <input type="text"size="50" name="tNome" id="cNome" required="required"/>        
+                    <br/><br/>
+                    <p>Você mora:</p>
+                    <input type="radio" name="tipo" id="cid" value="C"/>
+                    <label for="cid">Cidade</label><br/>
+                    <input type="radio" name="tipo" id="inter" value="I"/>
+                    <label for="inter">Interior</label><br/>
+                </fieldset>
+                <br>
+    
+                <fieldset>
+                    <legend>Infomações extras:</legend>
+                    <p>Qual meio de transporte você usa?</p>
+                    <input type="checkboox" id="transporte1" name="transporte1" value="Bike"/>
+                    <label for="transporte1">Bicicleta</label><br/>
+                    <input type="checkboox" id="transporte2" name="transporte2" value="Car"/>
+                    <label for="transporte2">Carro</label><br/>
+                    <input type="checkboox" id="transporte3"
+                    name="transporte3"  value="Metro"/>
+                    <label for="tranporte3">Metro</label><br/>
+                    <input type="checkboox" id="transporte4" value="bus"/>
+                    <label for="transporte4">Ônibus</label><br/>
+                    <label for="time">Selecione seu time:</label>
+                    <select id="time" name="time">
+                        <option value="Cruzeiro">Cruzeiro</option>
+                        <option valeu="sao paulo">São Paulo</option>
+                        <option value="Flamengo">Flamengo</option>
+                        <option value="corinthians">Corinthians</option>
+                        <option value="Palmeiras">PalmeirasS</option>
+                        <option value="santos">Santos</option>
+                    </select><br/>
+                    <label for="cCid">Escolha a sua Cidade na lista:</label>
+                    <input list="cidade" name="tCid" placeholder="Sua Ciadade"/>
+                    <datalist id="cidade">
+                        <option value="são paulo"></option>
+                        <option value="campinas"></option>
+                        <option value="santos"></option>
+                        <option value="Santo andré"></option>
+                    </datalist>
+                </fieldset>
+    
+                <br>
+    
+                <fieldset>
+                    <legend>Exemplo range e output:</legend>
+                    0
+                    <input type="range" id="valor_01" name="valor_01"/>
+                    100 +
+                    <input type="number" id="valor_02" name="valor_02" value="50"/>
+                    =150
+                
+                    <output name="result" for="valor_01 valor _02"></output>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Sua opinião</legend>
+                    <p>Sugestões, criticas e elogios:</p>
+                    <textarea name="message" rosw="10" cols="30" plaecrohlder="Deixe aqui a sua menssage!"></textarea>
+                </fieldset>
+    
+                <br>
+    
+                <input type="submit" value="Enviar"/>
+    </form>
+    </article>
+    <footer>
+        <small>Instituto da Oportunidade Social</small>
+    </footer>
+</body>
+
+</html>

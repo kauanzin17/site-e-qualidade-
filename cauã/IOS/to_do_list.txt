@@ -1,0 +1,5 @@
+TOOD 01: criar minha pagina na internet
+TODO 02: registrar um dominio .com.br para hospedar o site
+TODO 03: Estudar HTML
+TODO 04: Estudar CSS
+TODO 05: Estudar JavaScript
